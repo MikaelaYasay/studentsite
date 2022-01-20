@@ -1,50 +1,129 @@
+/*GLOBAL RESET */
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+/* GLOBAL COLORS */
+body { color: rgba(0,0,0,0.8); }
+a { color: rgba(31, 110, 56, 1); }
+a:hover { color: rgba(29, 75, 43, 1); }
+
+/* GLOBAL TYPOGRAPHY */
 body {
-    
-    font-family:'Proxima Nova Medium', sans-serif;
-    background: rgb(55, 112, 53);
-    margin: 0;
+    font-family: 'Proxima Nova Regular', Helvetica, sans-serif; 
+    font-size: 88.75%; /* 14 px*/
+    line-height: 1.4;
+}
+
+/* HEADER */
+header {
+    background-color: rgba(29, 75, 43, 1);
+    color: rgba(255, 255, 255, .8);
+    padding: 1em;
     display: grid;
-    align-content: center;
-    min-height: 100vh;
-
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
-h1 {
-    font-size: 48px;
+header a {
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
-
 }
 
-h2 {
-    text-align: center;
-
-}
-p {
-    font-family: 'Proxima Nova Thin', sans-serif;
-    text-align: center;
-    
+header a:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
-p{
-    color: white;
-    max-width: 30em;
-    margin: 0 auto;
-
+/* SITE ID */
+.site-id h1 {
+    margin: 0;
 }
 
-ul {
-    margin: 0 auto;
+/* SITE NAV */
+.site-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
     padding: 0;
-
+    list-style: none;
 }
 
-li {
-    font-family: 'Proxima Nova Thin', sans-serif;
-    font-size: 15px;
+.site-nav a {
+    display: block;
+    padding: 1em;
 }
 
-a {
+/* MAIN */
+main {
+    backgrund: rgba(0, 0, 0, .05);
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: rgba(29, 75, 43, 1);
+    text-align: center;
     color: white;
-
+    padding: 6em 1em;
 }
+
+.hero h2 {
+    font-size: 6em;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.hero p {
+    max-width: 30em;
+    margin: 1em auto;
+}
+
+/* COURSES SECTION */
+.courses {
+    padding: 6em 1em;
+    display: grid;
+    justify-content: center;
+}
+
+.courses ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.courses h3 {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid rgba(0, 0, 0, .05);
+    padding: 1em;
+}
+
+/* SOCIAL NAV */
+.social-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.social-nav a {
+    display: block;
+    padding: 1em;
+}
+
+
+
+
+
+
+
+/* FOR WEB DEV PURPOSES ONLY */
+ /* body, * {
+        background-color: rgba(0, 0, 0, .05);
+        border: 1px solid rgba(0, 0, 0, .1);
+        color: rgba(0, 0, 0, .5);
+} */
