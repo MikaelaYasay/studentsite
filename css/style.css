@@ -52,10 +52,10 @@ header a:hover {
     display: block;
     padding: 1em;
 }
-
+            
 /* MAIN */
 main {
-    backgrund: rgba(0, 0, 0, .05);
+    background: rgba(0, 0, 0, .05);
 }
 
 /* HERO SECTION */
@@ -94,6 +94,15 @@ main {
 .courses h3 {
     text-align: center;
 }
+
+/* STYLING FOR SUB PAGES */
+.page-sub .hero {
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+
+
+
 
 /* FOOTER */
 footer {
