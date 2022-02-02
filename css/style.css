@@ -10,7 +10,7 @@
     height: 0;
     width: 0;
     border: .1px solid transparent;
-    bottom: 0;
+    border-top: 0;
     left: 0;
     box-sizing: border-box;
 }
@@ -21,24 +21,24 @@
     height: 0;
     width: 0;
     border: .1px solid transparent;
-    top: 0;
+    border-top: 0;
     right: 0;
     box-sizing: border-box;
 }
 
 .site-nav li a:hover::before {
-    height: 38px;
-    width: 50px;
+    height: 25px;
+    width: 60px;
     border: .1px solid white;
     border-right: none;
-    border-bottom: none;
+    border-top: none;
     transition: height 0.3s linear,
                 width 0.3s linear 0.3s;
 }
 
 .site-nav li a:hover::after {
-    height: 35px;
-    width: 50px;
+    height: 25px;
+    width: 60px;
     border: .1px solid white;
     border-left: none;
     border-top: none;
