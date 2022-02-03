@@ -1,3 +1,12 @@
+/*GLOBAL RESET */
+* { 
+    box-sizing: border-box; 
+}
+
+body { 
+    margin: 0; 
+}
+
 /* MIKAELA CUSTOM HOVER */
 .site-nav li {
     position: relative;
@@ -45,10 +54,6 @@
     transition: height 0.3s linear,
                 width 0.3s linear 0.3s;
 }
-
-/*GLOBAL RESET */
-* { box-sizing: border-box; }
-body { margin: 0; }
 
 /* GLOBAL COLORS */
 body { color: rgba(0,0,0,0.8); }
