@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>Base | Content</title>
+    <title>Base | Layout</title>
     <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for websie projects."/>
 
     <!-- FOR MOBILE / SMALL SCREENS -->
@@ -15,65 +15,84 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
-    
-    <h1>This is a Heading 1</h1>
-    <h2>This is a Heading 2</h2>
-    <h3>This is a Heading 3</h3>
-    <h4>This is a Heading 4</h4>
-    <h5>This is a Heading 5</h5>
-    <h6>This is a Heading 6</h6>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. This is <strong>something bold</strong> and this is <em>something italic</em>. And this is an <a href="#">inline link</a>. Doloremque corrupti at sequi nihil aliquam repellat fugiat eligendi architecto nulla sapiente placeat modi alias mollitia est obcaecati velit, officiis id totam non reprehenderit dolor labore nostrum nisi odio! Quisquam eveniet vitae laboriosam incidunt adipisci nemo molestiae suscipit optio, placeat doloribus nam.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur qui molestias illum modi ipsa dolorem quod quae quia aut, nostrum, quos est inventore, neque expedita! Deserunt, porro? Consequuntur provident blanditiis, quo esse at aliquid. Impedit iure repellat recusandae labore explicabo, aliquam minus eos ad nisi at ea cum enim corrupti.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, doloribus provident dolor tempore ducimus atque aut molestiae! Dolor.</p>
+<body class="demo">
+    <div class="container">
 
-    <h4>This is an unordered list</h4>
-    <ul>
-        <li>List item</li>
-        <li>List item</li>
-        <li>List item
-            <ul>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-            </ul>
-        </li>
-        <li>List item</li>
-        <li>List item</li>
-    </ul>
+        <h1>Base Layout</h1>
 
-    <h4>This is an ordered list</h4>
-    <ol>
-        <li>List item</li>
-        <li>List item</li>
-        <li>List item
-            <ol>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-            </ol>
-        </li>
-        <li>List item</li>
-        <li>List item</li>
-    </ol>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi molestiae magnam saepe quae sunt, vitae, qui corrupti cum optio animi voluptate veritatis laboriosam suscipit libero dicta a, at unde quidem ipsa odit iste quaerat hic fuga ea! Quam similique tempore exercitationem eligendi tempora esse eos, animi voluptatem aspernatur ipsum quia, ex explicabo. Sed nam quisquam et repudiandae maxime, veritatis cupiditate. Exercitationem quia delectus porro odio aperiam labore laborum, quidem eos officia ea voluptates vero quasi optio aspernatur voluptate deserunt voluptatum at recusandae itaque architecto unde ex nulla modi explicabo? Voluptate a, eius eos similique placeat doloribus magni optio deserunt eligendi.</div>
+   
+        <h2>Grid</h2>
 
-    <h4>Links:</h4>
-    <p>This is a<a href="#"> link</a>.</p>
+        <div class="row">
+            <div class="column one-whole">One Whole Column</div>
+        </div>
 
-    <h4>Helper Classes</h4>
-    <p class="text-centered">This should be center justified text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus nesciunt mollitia possimus repudiandae voluptatem natus ab doloremque! Aspernatur mollitia ut veritatis eius consequuntur, a placeat dolorum quis quae excepturi iure ducimus. Temporibus ex, in debitis labore perspiciatis odit id provident aut repudiandae nesciunt aliquam! Illo voluptas esse alias reprehenderit dolorem.</p>
+        <div class="row">
+            <div class="column one-half">
+                One Half Column
+            </div>
+            <div class="column one-half">
+                One Half Column
+            </div>
+        </div>
 
-    <h4>Images:</h4>
-    <img src="http://placehold.it/1500x500" alt="This is a placeholder image." width="1500" height="500"/>
+        <div class="row">
+            <div class="column one-third">
+                One Third Column
+            </div>
+            <div class="column one-third">
+                One Third Column
+            </div>
+            <div class="column one-third">
+                One Third Column
+            </div>
+        </div>
 
-    <h4>Buttons</h4>
-    <a href="#" class="button">Default Button</a>
-    <a href="#" class="button alt">Alt Button</a>
-    <button>Button Element</button>
+        <div class="row">
+            <div class="column two-thirds">
+                Two Third Column
+            </div>
+            <div class="column one-third">
+                One Third Column
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="column one-fourth">
+                One Fourth Column
+            </div>
+            <div class="column one-fourth">
+                One Fourth Column
+            </div>
+            <div class="column one-fourth">
+                One Fourth Column
+            </div>
+            <div class="column one-fourth">
+                One Fourth Column
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column one-third centered">
+                One Third Column
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column one-half centered">
+                One Half Column Centered
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column two-thirds centered">
+                Two Thirds Column Centered
+            </div>
+        </div>
+
+
+    </div>
 
 
 
