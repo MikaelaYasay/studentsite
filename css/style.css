@@ -67,6 +67,38 @@ body {
     line-height: 1.4;
 }
 
+/* CUSTOM NAME ANIMATION */
+h2 span {
+    animation: rotasi 3s infinite linear;
+}
+
+span:nth-child(1) {
+    color: rgb(255, 255, 255, .5);
+    animation-delay: .2;
+}
+
+span:nth-child(2) {
+    color:rgb(255, 255, 255, .5);
+    animation-delay: .4s;
+}
+
+span:nth-child(3) {
+    color: rgb(255, 255, 255, .5);
+    animation-delay: .8s;
+}
+
+@keyframes rotasi {
+    25% {
+        color: rgb(31, 85, 107);
+    }
+    50% {
+            color:rgb(55, 95, 67);
+        }
+    75% {
+            color: rgb(255, 255, 255, .5);
+        }
+    }
+
 /* HEADER */
 header {
     background-color: rgba(29, 75, 43, 1);
