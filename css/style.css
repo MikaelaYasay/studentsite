@@ -272,6 +272,10 @@ aside {
     margin: 2em;
 }
 
+.project a {
+    text-decoration: none;
+}
+
 /* SOCIAL NAV */
 /*.social-nav div {
     display: grid;
