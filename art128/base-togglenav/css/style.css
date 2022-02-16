@@ -116,8 +116,8 @@ img {
 button {
     font-size: inherit;
     line-height: 1;
-    background-color: rgba(0, 0, 255, 1);
-    border: 1px solid rgba(0, 0, 255, 1);
+    background-color:rgb(38, 88, 53);
+    border: 1px solid rgb(38, 88, 53);
     color: rgba(255, 255, 255, 1);
     padding: 1em;
     display: inline-block;
@@ -128,19 +128,19 @@ button {
 
 .button:hover,
 button:hover {
-    background-color: rgba(0, 0, 153, 1);
-    border-color: rgba(0, 0, 153, 1);
+    background-color: rgba(29, 75, 43, 1);
+    border-color: rgba(29, 75, 43, 1);
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 
 .button.alt {
     background-color: transparent;
-    color: rgba(0, 0, 153, 1);
+    color: rgba(29, 75, 43, 1);
 }
 
 .button.alt:hover {
-    background-color: rgba(0, 0, 153, 1);
+    background-color: rgba(29, 75, 43, 1);
     color: rgba(255, 255, 255, 1);
 }
 
@@ -288,7 +288,7 @@ body.demo::before {
 
 .site-header a:hover,
 .site-footer a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: rgb(38, 88, 53);
     text-decoration: none;
 }
 
@@ -360,7 +360,7 @@ section {
         text-align: center;
     }
     .toggle-nav .site-nav a:hover {
-        background-color: rgba(0, 0, 153, 1);
+        background-color: rgba(29, 75, 43, 1);
         color: white;
     }
     .toggle-nav[data-navstate="closed"] ul {
@@ -382,7 +382,7 @@ section {
         display: inline-block;
         padding: 0 .4em;
         margin: 0;
-        color: rgba(0, 0, 0, .8);
+        color: rgba(29, 75, 43, 1);
         font-size: 1.5em;
     }
 
