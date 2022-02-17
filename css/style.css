@@ -195,6 +195,10 @@ aside {
     margin: 0 auto;
 }
 
+.hero span {
+    text-align: center;
+}
+
 .hero p {
     max-width: 30em;
     margin: 1em auto;
