@@ -324,7 +324,11 @@ body.demo::before {
     text-align: center;
 }
 
-.site-id .about-opas {
+.site-id .opas {
+    color: rgba(0, 0, 0, .4);
+}
+
+.site-id .opas:hover {
     color: rgba(0, 0, 0, .4);
 }
 
