@@ -44,56 +44,10 @@ button {
     padding-right: 10px;
     padding-left: 1px;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-    background-color: rgb(55, 95, 67);
+    background-color: rgb(18, 37, 24);
   }
   
   button:hover:after {
-    opacity: 1;
-    right: 10px;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-  }
-/*button {
-    font-family: 'ff-cocon-pro', sans-serif;
-    font-weight: 300;
-    border-radius: 15px;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    text-align: center;
-    font-size: 1em;
-    padding: 0;
-    width: 100px;
-    transition: all 0.3s;
-    cursor: pointer;
-    margin: 0;
-  }
-  
-button{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.3s;
-  }
-  
-button:after {
-    text-align: left;
-    content: '»';
-    position: absolute;
-    opacity: 0;  
-    top: 13px;
-    right: -6px;
-    transition: ease-in-out.3s;
-    
-  }
-  
-button:hover{
-    padding-right: 0;
-    padding-left: 0;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-    background-color: rgb(55, 95, 67);
-  }
-  
-button:hover:after {
     opacity: 1;
     right: 10px;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
@@ -135,10 +89,10 @@ span:nth-child(3) {
 
 @keyframes rotasi {
     25% {
-        color: rgb(31, 85, 107);
+        color: rgb(31, 85, 107, .5);
     }
     50% {
-            color:rgb(55, 95, 67);
+            color:rgb(55, 95, 67, .5);
         }
     75% {
             color: rgb(0, 0, 0, rgba(0, 0, 0, .5));
@@ -197,7 +151,7 @@ section {
 footer {
     border-top: 1px solid rgba(0, 0, 0, .05);
     padding: 1em;
-    background: rgba(7, 34, 15, 0.699);
+    background: rgb(18, 37, 24);
 }
 
 /* LAYOUT */
@@ -320,6 +274,19 @@ aside {
 
 .project a {
     text-decoration: none;
+    
+}
+
+.leaf li::before {
+    content: '🍃';
+    margin-right: 0.35em;
+    margin-left: -2em;
+    padding: 0.2em 0.2em 0.15em 0.15em;
+    display: inline-block;
+}
+
+.leaf li {
+    list-style: none;
 }
 
 /* SOCIAL NAV */
@@ -404,18 +371,18 @@ footer{
 
 .wrapper .button a {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 5px;
     margin-left: 10px;
     transition: all 0.3s ease-out;
 }
 
 .wrapper .button:nth-child(1):hover a {
-    color: rgba(29, 75, 43, 1);
+    color: rgba(255, 255, 255, .8);
 }
 
 .wrapper .button:nth-child(2):hover a {
-    color: rgba(29, 75, 43, 1);
+    color: rgba(255, 255, 255, .8);
 }
 
 /* CODE BLOCKS */
