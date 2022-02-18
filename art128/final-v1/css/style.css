@@ -158,6 +158,11 @@ form input[type="submit"]:hover {
     text-decoration: none;
 }
 
+.button {
+    width: 100px;
+    padding-bottom: 1em;
+}
+
 .button.alt {
     background-color: transparent;
     color: rgba(29, 75, 43, 1);
