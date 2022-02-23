@@ -573,7 +573,15 @@ form input[type="submit"] {
     background: rgba(0, 0, 0, .05);
 }
 
-#contact {
+#collection {
+    background: rgba(0, 0, 0, .1);
+}
+
+#shop {
+    background: rgba(0, 0, 0, .05);
+}
+
+#cart {
     background: rgba(0, 0, 0, .1);
 }
 
