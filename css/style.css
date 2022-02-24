@@ -138,6 +138,41 @@ header a:hover {
     padding: 1em;
 }
 
+/* NOTES CONTAINER */
+.wall {
+    background-color: rgb(18, 37, 24);
+}
+
+.wall h3 {
+    color: rgba(151, 107, 57, 0.5);
+}
+
+.primary h2 {
+    color: rgba(151, 107, 57, 0.5);
+}
+
+.primary p {
+    color: rgba(255, 255, 255, .5);
+}
+
+.primary li {
+    color: rgba(255, 255, 255, .5);
+}
+
+.primary dl {
+    color: rgba(255, 255, 255, .5);
+}
+
+.container a {
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+}
+
+.container a:hover {
+    color: rgb(35, 78, 49);
+}
+
+
 /* MAIN */
 main {
     background: rgba(0, 0, 0, .05);
@@ -209,7 +244,7 @@ aside {
     padding: 6em 1em;
     display: grid;
     justify-content: center;
-    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    background-color: rgb(18, 37, 24);
 }
 
 .courses ul {
@@ -219,10 +254,16 @@ aside {
 }
 
 .courses a {
+    color: rgba(255, 255, 255, .5);
     text-decoration: none;
 }
 
+.courses a:hover {
+    color: rgb(35, 78, 49);
+}
+
 .courses h3 {
+    color: rgba(151, 107, 57, 0.5);
     text-align: center;
 }
 
@@ -266,6 +307,7 @@ aside {
 
 /* COURSE PAGES WITH MULTIPLE PROJECT LISTS */
 .coursework {
+    background-color:rgb(18, 37, 24);
     padding: 3em 1em;
     display: flex;
     justify-content: center;
@@ -273,12 +315,18 @@ aside {
 }
 
 .project {
+    color: rgba(151, 107, 57, 0.5);
     margin: 2em;
 }
 
 .project a {
     text-decoration: none;
+    color: rgba(255, 255, 255, .5);
     
+}
+
+.project a:hover {
+    color: rgb(35, 78, 49);
 }
 
 .leaf li::before {
@@ -291,6 +339,9 @@ aside {
 
 .leaf li {
     list-style: none;
+    font-family: 'ff-cocon-pro', sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /* SOCIAL NAV */
@@ -382,11 +433,11 @@ footer{
 }
 
 .wrapper .button:nth-child(1):hover a {
-    color: rgba(255, 255, 255, .8);
+    color: rgb(35, 78, 49);
 }
 
 .wrapper .button:nth-child(2):hover a {
-    color: rgba(255, 255, 255, .8);
+    color: rgb(35, 78, 49);
 }
 
 /* CODE BLOCKS */
