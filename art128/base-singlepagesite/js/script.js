@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-    //STICKY NAV SCROLL LINKS FOR SINGLE PAGE SITES
+    //STICKY NAV LINKS TOGGLE MENU NAV
     var stickynavlinks = document.querySelectorAll(".sticky nav a");
     var stickyheader = document.querySelector(".sticky");
     var j;
