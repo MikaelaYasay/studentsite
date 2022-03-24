@@ -135,13 +135,14 @@ img {
 
 /* BUTTONS */
 .button,
+.button2,
 button,
 form input[type="submit"] {
     font-size: inherit;
     line-height: 1;
-    background-color: rgba(29, 75, 43, 1);
-    border: 1px solid rgba(29, 75, 43, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
     padding: 1em;
     display: inline-block;
     margin: .5em .5em .5em 0;
@@ -150,16 +151,22 @@ form input[type="submit"] {
 }
 
 .button:hover,
+.button2:hover,
 button:hover,
 form input[type="submit"]:hover {
-    background-color: rgb(19, 54, 30);
-    border-color: rgb(19, 54, 30);
+    background-color: rgb(53, 53, 167);
+    border-color: rgb(53, 53, 167);
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 
 .button {
-    width: 100px;
+    width: 120px;
+    padding-bottom: 1em;
+}
+
+.button2 {
+    width: 150px;
     padding-bottom: 1em;
 }
 
@@ -310,7 +317,7 @@ body.demo::before {
 @media (min-width: 768px) {
     .site-header .container {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
     }
 } 
 
@@ -374,6 +381,27 @@ body.demo::before {
     color: rgba(255, 255, 255, 1);
 }
 
+.nav2-footer {
+    text-align: center;
+}
+
+.nav2-footer li {
+    display: inline-block;
+    justify-content: space-around;
+    text-decoration: none;
+    
+}
+
+.site-nav2 li {
+    text-decoration: none;
+}
+
+.site-nav2 a {
+    display: block;
+    padding: 1em;
+    color: rgba(0, 0, 0, 1);
+}
+
 .site-nav .menu-button {
     display: none;
 }
@@ -408,6 +436,7 @@ section {
     .toggle-nav .site-nav .menu-button {
         display: block;
         display: inline-block;
+        justify-content: end;
         cursor: pointer;
         padding: .3em .8em;
         margin-bottom: .8em;
@@ -510,6 +539,11 @@ article p + h4,
 article p + h5,
 article p + h6 {
     margin-top: 1.5em;
+}
+
+.shop-link {
+    padding-top: 5em;
+    text-align: center;
 }
 
 /* FORMS */
