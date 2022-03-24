@@ -614,10 +614,6 @@ form input[type="submit"] {
     width: 100%;
 }
 
-.site-header.sticky + main {
-    padding-top: 3em;
-}
-
 #about {
     background: rgba(0, 0, 0, .05);
 }
