@@ -313,6 +313,17 @@ body.demo::before {
     justify-content: space-around;
 }
 
+.site-id .flex-logo {
+  display: flex;
+  justify-content: center;  
+  font-size: 1em;
+}
+
+.site-id .flex-logo p {
+    padding-top: 2em;
+    color: rgba(255, 255, 255, 1);
+}
+
 /* ON LARGER SCREEN PLACE LOGO LEFT AND NAV RIGHT */
 @media (min-width: 768px) {
     .site-header .container {
