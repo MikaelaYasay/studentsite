@@ -35,8 +35,7 @@ body {
     font-size: 87.5%; /* 14px */
     font-family: Helvetica, Arial sans-serif;
     line-height: 1.5;
-    color: rgba(255, 255, 255, .8);
-    background-color: rgba(3, 20, 43, 0.808);
+    color: rgba(0, 0, 0, .8);
 }
 
 /* HEADINGS */
@@ -608,26 +607,17 @@ form input[type="submit"] {
 }
 
 /* CUSTOM SITE CSS */
-section {
-    position: relative;
-}
-
 .section-title {
-    position: absolute;
     text-align: center;
-    margin: 0;
-    border: 1px solid red;
-    top: 50%;
+    margin-bottom: 3em;
 }
 
-.section-title.title-right {
-    right: 0;
-    transform: rotate(-90deg);
-}
-
-.section-title.title-left {
-    left: 0;
-    transform: rotate(90deg);
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    margin: .5em auto;
+    border-bottom: 3px solid rgba(0, 0, 0, .2);
 }
 
 .site-header.sticky {
