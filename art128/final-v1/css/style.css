@@ -315,13 +315,13 @@ body.demo::before {
 
 /* STYLING FOR BOTH HEADER AND FOOTER */
 .site-header {
-    background: white;
+    background: rgba(43, 4, 153, 0.3);
     padding-bottom: 0.4em;
 }
 
 .site-header a,
 .site-footer a {
-    color: rgba(0, 0, 0, .8);
+    color: rgba(255, 255, 255, .8);
 }
 
 .site-header a:hover,
@@ -358,6 +358,7 @@ body.demo::before {
 .site-nav a {
     display: block;
     padding: 1em;
+    color: white;
 }
 
 .site-nav .menu-button {
@@ -369,9 +370,14 @@ section {
     padding: 3em 0;
 }
 
+/* MAIN */
+.site-main {
+    padding: 0;
+}
+
 /* HERO */
 .hero {
-    padding: 6em 4%;
+    padding: 0;
     background-color: rgba(0, 0, 0, .1);
     text-align: center;
 }
@@ -565,8 +571,8 @@ form input[type="submit"] {
     width: 100%;
 }
 
-.site-header.sticky + main {
-    padding-top: 3em;
+.site-header.sticky{
+    padding-top: .5em;
 }
 
 #about {

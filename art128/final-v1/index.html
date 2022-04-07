@@ -44,9 +44,8 @@
 <main class="site-main">
     
     <section class="hero">
-        <div class="container">
-            <img src="img/hero.jpg" alt="placeholder-1x1">
-        </div>
+            <img src="img/hero.jpg" alt="placeholder-1x1"
+            width="5000" height="5000">
     </section>
     
 
@@ -90,15 +89,15 @@
                     <p>
                         Purchase
                     </p>
-                    <p>
+                    <button>
                         Read More >
-                    </p>
+                    </button>
                     <p>
                         Personalize
                     </p>
-                    <p>
+                    <button>
                         Read More >
-                    </p>
+                    </button>
                 </div>
                 <div class="column one-half">
                     <img src="img/bird.JPG" alt="Square 1x1 Placeholder Image" width="1500" height="2000">
@@ -126,10 +125,10 @@
                 </div>
                 <div class="column one-half">
                     <p>
-                        Username
+                        Username:
                     </p>
                     <p>
-                        Password
+                        Password:
                     </p>
                     <button>
                         Log-In
@@ -143,7 +142,10 @@
         <div class="container">
             <h3 class="section-title">Contact</h3>
             <form> 
-                <label for="contact-name">Name:</label>
+                <label for="contact-name">First Name:</label>
+                <input type="text" id="contact-name" name="contact-name" />
+
+                <label for="contact-name">Last Name:</label>
                 <input type="text" id="contact-name" name="contact-name" />
     
                 <label for="email">Email Address:</label>
