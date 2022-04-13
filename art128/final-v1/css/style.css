@@ -35,8 +35,7 @@ body {
     font-size: 87.5%; /* 14px */
     font-family: Helvetica, Arial sans-serif;
     line-height: 1.5;
-    color: rgba(255, 255, 255, .8);
-    background-color: rgba(26, 39, 53, 255);
+    color: rgba(0, 0, 0, .8);
 }
 
 /* HEADINGS */
@@ -136,14 +135,13 @@ img {
 
 /* BUTTONS */
 .button,
-.button2,
 button,
 form input[type="submit"] {
     font-size: inherit;
     line-height: 1;
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 1);
-    color: rgba(0, 0, 0, 1);
+    background-color: rgba(29, 75, 43, 1);
+    border: 1px solid rgba(29, 75, 43, 1);
+    color: rgba(255, 255, 255, 1);
     padding: 1em;
     display: inline-block;
     margin: .5em .5em .5em 0;
@@ -152,21 +150,15 @@ form input[type="submit"] {
 }
 
 .button:hover,
-.button2:hover,
 button:hover,
 form input[type="submit"]:hover {
-    background-color: rgb(53, 53, 167);
-    border-color: rgb(53, 53, 167);
+    background-color: rgb(19, 54, 30);
+    border-color: rgb(19, 54, 30);
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 
 .button {
-    width: 120px;
-    padding-bottom: 1em;
-}
-
-.button2 {
     width: 150px;
     padding-bottom: 1em;
 }
@@ -310,44 +302,26 @@ body.demo::before {
 
 /* SITE HEADER */
 .site-header {
-    display: flex;
-    justify-content: space-around;
-}
-
-.site-id .flex-logo {
-  display: flex;
-  justify-content: center;  
-  font-size: 1em;
-  font-weight: 100;
-}
-
-.site-id a {
-    display: flex;
-}
-
-.site-id .flex-logo p {
-    padding-top: 1.3em;
-    padding-left: .5em;
-    color: rgba(255, 255, 255, 1);
+    padding: 1em 0;
 }
 
 /* ON LARGER SCREEN PLACE LOGO LEFT AND NAV RIGHT */
 @media (min-width: 768px) {
     .site-header .container {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
 } 
 
 /* STYLING FOR BOTH HEADER AND FOOTER */
 .site-header {
-    background: rgba(75, 75, 223, 0.288);
+    background: rgba(43, 4, 153, 0.3);
     padding-bottom: 0.4em;
 }
 
 .site-header a,
 .site-footer a {
-    color: rgba(0, 0, 0, .8);
+    color: rgba(255, 255, 255, .8);
 }
 
 .site-header a:hover,
@@ -366,63 +340,25 @@ body.demo::before {
     margin: 0;
     padding-top: .55em;
     text-align: center;
-    justify-content: space-around;
 }
 
 .site-id .opas {
-    color: rgba(255, 255, 255, .4);
-}
-
-.flex-logo {
-    color: white;
+    color: rgba(0, 0, 0, .4);
 }
 
 /* SITE NAV */
 .site-nav ul {
-    padding: 0;
-}
-
-.left-nav li {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: inline-block;
-    justify-content: left;
-}
-
-.right-nav li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: inline-block;
-    justify-content: left;
+    display: flex;
+    justify-content: center;
 }
 
 .site-nav a {
     display: block;
     padding: 1em;
-    color: rgba(255, 255, 255, 1);
-}
-
-.nav2-footer {
-    text-align: center;
-}
-
-.nav2-footer li {
-    display: inline-block;
-    justify-content: space-around;
-    text-decoration: none;
-    
-}
-
-.site-nav2 li {
-    text-decoration: none;
-}
-
-.site-nav2 a {
-    display: block;
-    padding: 1em;
-    color: rgba(0, 0, 0, 1);
+    color: white;
 }
 
 .site-nav .menu-button {
@@ -432,6 +368,11 @@ body.demo::before {
 /* SECTIONS */
 section {
     padding: 3em 0;
+}
+
+/* MAIN */
+.site-main {
+    padding: 0;
 }
 
 /* HERO */
@@ -459,7 +400,6 @@ section {
     .toggle-nav .site-nav .menu-button {
         display: block;
         display: inline-block;
-        justify-content: end;
         cursor: pointer;
         padding: .3em .8em;
         margin-bottom: .8em;
@@ -564,10 +504,15 @@ article p + h6 {
     margin-top: 1.5em;
 }
 
-.shop-link {
-    padding-top: 5em;
-    text-align: center;
-}
+/* article p:first-of-type:first-letter {
+   font-size: 3em;
+   line-height: 1em;
+   background: rgba(29, 75, 43, 1);
+   color: rgba(255, 255, 255, .8);
+   padding: .2em .4em;
+   margin-right: .3em;
+   float: left;
+} */
 
 /* FORMS */
 form {
@@ -608,31 +553,26 @@ form input[type="submit"] {
 }
 
 /* CUSTOM SITE CSS */
-section {
-    position: relative;
-}
-
 .section-title {
-    position: absolute;
     text-align: center;
-    margin: 0;
-    border: 1px solid red;
-    top: 50%;
+    margin-bottom: 3em;
 }
 
-.section-title.title-right {
-    right: 0;
-    transform: rotate(-90deg);
-}
-
-.section-title.title-left {
-    left: 0;
-    transform: rotate(90deg);
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    margin: .5em auto;
+    border-bottom: 3px solid rgba(0, 0, 0, .2);
 }
 
 .site-header.sticky {
     position: fixed;
     width: 100%;
+}
+
+.site-header.sticky{
+    padding-top: .5em;
 }
 
 #about {

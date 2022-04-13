@@ -20,49 +20,46 @@
 
 
 <header class="site-header toggle-nav sticky" data-navstate="closed"> 
-        <nav class="site-nav">
-            <div class="menu-button navicon">Menu</div>
-            <ul class="left-nav">
-                <li><a href="#about"class="scroll">About Me</a></li>
-                <li><a href="#collection" class="scroll">Collection</a></li>
-                <li><a href="#shop"class="scroll">Shop</a></li>
-            </ul>
-        </nav>
+    <div class="container">
         <div class="site-id">
-            <h1 class="flex-logo">
-                <a href="#top" class="scroll"><img src="img/logo.png" alt="placeholder-1x1" height="150" width="150">
-                    <p>Studio</p>
-                </a>
+            <h1>
+                <a href="#top" class="scroll"> JayRay Studio</a>
             </h1>
         </div>
         <nav class="site-nav">
-            <ul class="right-nav">
+            <div class="menu-button navicon">Menu</div>
+            <ul>
+                <li><a href="#top" class="scroll">Home</a></li>
+                <li><a href="#about"class="scroll">About Me</a></li>
+                <li><a href="#collection" class="scroll">Collection</a></li>
+                <li><a href="#shop"class="scroll">Shop</a></li>
                 <li><a href="#cart"class="scroll">Cart</a></li>
                 <li><a href="#log-in"class="scroll">Log In</a></li>
                 <li><a href="#contact" class="scroll">Contact</a></li>
             </ul>
         </nav>
+    </div>
 </header>
 
 <main class="site-main">
     
     <section class="hero">
-        <img src="img/hero.jpg" alt="placeholder-1x1" height="1500" width="1500">
+            <img src="img/hero.jpg" alt="placeholder-1x1"
+            width="5000" height="5000">
     </section>
     
+
     <section id="about">
         <div class="container">
-            <h3 class="section-title title-right">About Me</h3>
-            <div class="row">
-                <div class="column one-half">
-                    <img src="img/portrait.JPG" alt="Square 1x1 Placeholder Image" width="1500" height="2000">
-                </div>
-                <div class="column one-half">
-                    <h1>Jaighden Rayment</h1>
-                    <p>I am a young artist starting up a business to showcase my passion for art. From acrylic and oil-paint,to scratchboards and pastels, I can do it all. I also love to paint beautiful landscapes and still-life.
-                    Alongside this business, I was born and raised inPowell, Wyoming and had recently moved to Oahu. I am currently a college student at KCC and work part-time in the Hawaii Army National Guard.</p>
-                </div>
-            </div>
+            <h3 class="section-title">About Me</h3>
+            <article>
+                <h1>Jaighden Rayment</h1>
+
+                <img src="img/portrait.JPG" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
+
+                <p class="subhead">Im a young artist starting up a business to showcase my passion for art. From acrylic and oil-paint, to scratchboards and pastels, I can do it all. I also love to paint beautiful landscapes and still-life. Alongside this business, I was born and raised in Powell, Wyoming and had recently moved to Oahu. I am currently a college student at KCC and work part-time in the Hawaii Army National Guard.</p>
+            </article>
+        </div>
     </section>
 
     <section id="collection">
@@ -86,17 +83,21 @@
 
     <section id="shop">
         <div class="container">
-            <h3 class="section-title title-left">Shop</h3>
+            <h3 class="section-title">Shop</h3>
             <div class="row">
                 <div class="column one-half">
-                    <div class="shop-link">
-                        <p>Purchase</p>
-                        <a href="#" class="button2">Read More</a>
-                    </div>
-                    <div class="shop-link">
-                        <p>Personalize</p>
-                        <a href="#" class="button2">Read More</a>
-                    </div>
+                    <p>
+                        Purchase
+                    </p>
+                    <button>
+                        Read More >
+                    </button>
+                    <p>
+                        Personalize
+                    </p>
+                    <button>
+                        Read More >
+                    </button>
                 </div>
                 <div class="column one-half">
                     <img src="img/bird.JPG" alt="Square 1x1 Placeholder Image" width="1500" height="2000">
@@ -123,16 +124,15 @@
                     <img src="img/monkey.jpg" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
                 </div>
                 <div class="column one-half">
-                    
-            <form> 
-                <label for="contact-name">Username:</label>
-                <input type="text" id="contact-name" name="contact-name" />
-    
-                <label for="email">Password:</label>
-                <input type="text" id="contact-email" name="contact-email" />
-
-                <input type="submit" value="Submit" />
-            </form>
+                    <p>
+                        Username:
+                    </p>
+                    <p>
+                        Password:
+                    </p>
+                    <button>
+                        Log-In
+                    </button>
                 </div>
             </article>
         </div>
@@ -144,7 +144,7 @@
             <form> 
                 <label for="contact-name">First Name:</label>
                 <input type="text" id="contact-name" name="contact-name" />
-    
+
                 <label for="contact-name">Last Name:</label>
                 <input type="text" id="contact-name" name="contact-name" />
     
@@ -162,8 +162,8 @@
 
 <footer class="site-footer">
     <div class="container">
-        <nav class="site-nav2">
-            <ul class="nav2-footer">
+        <nav class="site-nav">
+            <ul>
                 <li><a href="#top" class="scroll">Home</a></li>
                 <li><a href="#about"class="scroll">About Me</a></li>
                 <li><a href="#collection"class="scroll">Collection</a></li>
