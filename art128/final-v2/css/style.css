@@ -33,10 +33,47 @@
 
 body {
     font-size: 87.5%; /* 14px */
-    font-family: Helvetica, Arial sans-serif;
+    font-family: 'Pragmatica', sans-serif;
+    font-weight: 200;
     line-height: 1.5;
     color: rgba(255, 255, 255, .8);
     background-color: rgba(26, 39, 53, 255);
+}
+
+.essonesnav{
+    font-size: 1em; /* 16px */
+    text-transform: uppercase;
+    font-family: 'Essones', serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+.essonesstudio{
+    font-size: .8em; /* 16px */
+    text-transform: uppercase;
+    font-family: 'Essones', serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+.essonesname{
+    font-size: 2.25em; /* 36px */
+    text-transform: uppercase;
+    font-family: 'Essones', serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+.essonessec{
+    font-size: 3em; /* 48px */
+    text-transform: uppercase;
+    font-family: 'Essones', serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
 }
 
 /* HEADINGS */
@@ -171,12 +208,12 @@ form input[type="submit"]:hover {
     padding-bottom: 1em;
 }
 
-.button.alt {
+.button2.alt {
     background-color: transparent;
     color: rgba(29, 75, 43, 1);
 }
 
-.button.alt:hover {
+.button2.alt:hover {
     background-color: rgba(29, 75, 43, 1);
     color: rgba(255, 255, 255, 1);
 }
@@ -610,6 +647,8 @@ form input[type="submit"] {
 /* CUSTOM SITE CSS */
 section {
     position: relative;
+    z-index: -1;
+
 }
 
 .section-title {
