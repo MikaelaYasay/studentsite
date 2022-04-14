@@ -391,6 +391,9 @@ body.demo::before {
     padding-bottom: 0.4em;
 }
 
+.site-footer {
+    background-color: rgba(48,61,74,255);
+}
 .site-header a,
 .site-footer a {
     color: rgba(0, 0, 0, .8);
