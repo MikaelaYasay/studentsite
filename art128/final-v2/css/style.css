@@ -461,6 +461,10 @@ body.demo::before {
     
 }
 
+.tabs {
+    font-size: .8em;
+}
+
 .site-nav2 li {
     text-decoration: none;
 }
@@ -669,6 +673,14 @@ section {
     top: 50%;
 }
 
+
+.section-title2 {
+    text-align: center;
+    margin: 0;
+    border: 1px solid red;
+    top: 50%;
+}
+
 .section-title.title-right {
     right: 0;
     transform: rotate(-90deg);
@@ -683,6 +695,9 @@ section {
     position: fixed;
     width: 100%;
 }
+.halves {
+ max-width: 200px;
+ }
 
 #about {
     background: rgba(0, 0, 0, .05);
