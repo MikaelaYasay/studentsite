@@ -40,6 +40,14 @@ body {
     background-color: rgba(26, 39, 53, 255);
 }
 
+.essones{
+    font-size: 1em; /* 16px */
+    font-family: 'Essones', serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
 .essonesnav{
     font-size: 1em; /* 16px */
     text-transform: uppercase;
@@ -186,6 +194,7 @@ form input[type="submit"] {
     margin: .5em .5em .5em 0;
     text-align: center;
     border-radius: .5em;
+    z-index: -1;
 }
 
 .button:hover,
@@ -491,7 +500,7 @@ section {
         position: absolute;
     }
     .toggle-nav .site-nav {
-       text-align: right;
+       text-align: left;
     } 
     .toggle-nav .site-nav .menu-button {
         display: block;
@@ -540,6 +549,7 @@ section {
         content: "\2715";
     }
 }
+
 
 /* SUB PAGES */
 blockquote {
