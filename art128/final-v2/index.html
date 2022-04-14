@@ -70,7 +70,7 @@
 
     <section id="collection">
         <div class="container">
-            <h3 class="section-title essonessec">Collection</h3>
+            <h3 class="section-title2 essonessec centered-text">Collection</h3>
             <div class="row">
                 <div class="column one-third">
                     <a href="#" class="button essones">Animal</a>
@@ -109,11 +109,11 @@
 
     <section id="cart">
         <div class="container">
-            <h3 class="section-title essonessec">Cart</h3>
+            <h3 class="section-title2 essonessec centered-text">Cart</h3>
             <article>
-                <img class="images" src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
-                <img class="images" src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
-                <img class="images" src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
+                <img class="images" src="img/bittersweet.jpg" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
+                <img class="images" src="img/deep sea.jpg" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
+                <img class="images" src="img/blue man.jpg" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
             </article>
         </div>
     </section>
@@ -143,14 +143,20 @@
 
     <section id="contact">
         <div class="container">
-            <h3 class="section-title essonessec">Contact</h3>
-            <form> 
-                <label for="contact-name">First Name:</label>
-                <input type="text" id="contact-name" name="contact-name" />
+            <h3 class="section-title2 essonessec">Contact</h3>
+            <div class="container">
+                <form class="halves"> 
+                    <label for="contact-name">First Name:</label>
+                    <input type="text" id="contact-name" name="contact-name" />
+                </form>
+
+                <form class="halves">
+                    <label for="contact-name">Last Name:</label>
+                    <input type="text" id="contact-name" name="contact-name" />
+                </form>
+            </div>
     
-                <label for="contact-name">Last Name:</label>
-                <input type="text" id="contact-name" name="contact-name" />
-    
+            <form>
                 <label for="email">Email Address:</label>
                 <input type="text" id="contact-email" name="contact-email" />
     
@@ -166,14 +172,36 @@
 <footer class="site-footer">
     <div class="container">
         <nav class="site-nav2">
-            <ul class="nav2-footer">
+            <ul class="nav2-footer ">
                 <li><a href="#top" class="scroll essonesnav">Home</a></li>
-                <li><a href="#about"class="scroll essonesnav">About Me</a></li>
-                <li><a href="#collection"class="scroll essonesnav">Collection</a></li>
-                <li><a href="#shop"class="scroll essonesnav">Shop</a></li>
-                <li><a href="#cart"class="scroll essonesnav">Cart</a></li>
-                <li><a href="#log-in"class="scroll essonesnav">Log In</a></li>
-                <li><a href="#contact" class="scroll essonesnav">Contact</a></li>
+                <div>
+                    <li><a href="#about"class="scroll essonesnav">About Me</a></li>
+                    <p class="tabs">Bio</p>
+                </div>
+                <div>
+                    <li><a href="#collection"class="scroll essonesnav">Collection</a></li>
+                    <p class="tabs">Animal</p>
+                    <p class="tabs">Landscape</p>
+                    <p class="tabs">Still Life</p>
+                </div>
+                <div>
+                    <li><a href="#shop"class="scroll essonesnav">Shop</a></li>
+                        <p class="tabs">Purchase</p>
+                        <p class="tabs">Personalize</p>
+                </div>
+                <div>
+                    <li><a href="#cart"class="scroll essonesnav">Cart</a></li>
+                    <p class="tabs">Previous Purchases</p>
+                </div>
+                <div>
+                    <li><a href="#log-in"class="scroll essonesnav">Log In</a></li>
+                    <p class="tabs">Profile</p>
+                    <p class="tabs">Create Account</p>
+                </div>
+                <div>
+                    <li><a href="#contact" class="scroll essonesnav">Contact</a></li>
+                    <p class="tabs">Previoulsy Asked Question</p>
+                </div>
             </ul>
         </nav>
     </div>
