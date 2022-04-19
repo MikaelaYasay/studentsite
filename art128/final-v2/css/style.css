@@ -38,6 +38,9 @@ body {
     line-height: 1.5;
     color: rgba(255, 255, 255, .8);
     background-color: rgba(26, 39, 53, 255);
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .essones{
@@ -80,6 +83,31 @@ body {
     text-transform: uppercase;
     font-family: 'Essones', serif;
     font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+.art-title {
+    font-size: 1.125em; /* 18px */
+    font-style:italic;
+    font-family: 'Essones', serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+.art-info {
+    font-size: .6em; /* 16px */
+    font-family: 'Pragmatica', sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+.purchase {
+    font-size: .6em; /* 18px */
+    font-family: 'Essones', serif;
+    font-weight: 100;
     line-height: 1.5;
     color: rgba(255, 255, 255, .8);
 }
@@ -129,6 +157,11 @@ p {
     margin: .5em 0;
     max-width: 38em;
 }
+
+.description {
+    padding: 3.2em 0;
+}
+
  /* LINKS */
 a {
     color: rgba(0, 0, 153, 0.8);
@@ -178,6 +211,8 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+
 
 /* BUTTONS */
 .button,
@@ -259,8 +294,6 @@ body { margin: 0; }
         max-width: 1200px;
     }
 }
-
-
 
 /* FOR DEMO PURPOSES */
 body.demo {
@@ -723,4 +756,16 @@ section {
     #contact {
         padding-bottom: 20em;
     }
+}
+
+/* CART STYLE */
+.cart-rows .one-third:nth-child(1) {
+    /* text-align: right; */
+}
+
+.cart-rows .row {
+    border-bottom: 1px solid white;
+    margin-bottom: 2em;
+    margin-top: 2em;
+
 }
