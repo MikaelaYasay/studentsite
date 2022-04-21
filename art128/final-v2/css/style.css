@@ -104,8 +104,16 @@ body {
     color: rgba(255, 255, 255, .8);
 }
 
+.cost-info {
+    font-size: .7em; /* 16px */
+    font-family: 'Pragmatica', sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
 .purchase {
-    font-size: .6em; /* 18px */
+    font-size: .7em; /* 18px */
     font-family: 'Essones', serif;
     font-weight: 100;
     line-height: 1.5;
@@ -201,6 +209,28 @@ a:hover{
     max-width: none;
     width: 100%;
 }
+.edge-to-edge {
+    margin: 0;
+    padding: 0;
+}
+
+.edge-to-edge .container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .edge-to-edge .row > .column {
+        margin: 0;
+    }
+    .edge-to-edge .row > .column.one-half {
+        max-width: 50%;
+    }
+}
+
+.trans-blue {
+    background-color: rgba(26, 39, 53, .8);
+}
 .horiz-center {
     margin-left: auto;
     Margin-right: auto;
@@ -272,7 +302,7 @@ body { margin: 0; }
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 4%;
+    padding: 1em 4%;
 }
 
 /* MEDIA QUERIES */
@@ -651,15 +681,16 @@ article p + h6 {
     margin-top: 1.5em;
 }
 
-.shop-link {
-    padding-top: 5em;
-    text-align: center;
-}
 
 /* FORMS */
 form {
     max-width: 600px;
     margin: 2em auto;
+}
+
+.log-form {
+    max-width: 600px;
+    margin: 7em 5em;
 }
 
 form label, 
@@ -706,7 +737,7 @@ section {
     text-align: center;
     margin: 0;
     border: 1px solid red;
-    top: 50%;
+    top: 30%;
 }
 
 
@@ -719,11 +750,13 @@ section {
 
 .section-title.title-right {
     right: 0;
+    padding-top: 3em;
     transform: rotate(-90deg);
 }
 
 .section-title.title-left {
     left: 0;
+    padding-top: 2.3em;
     transform: rotate(90deg);
 }
 
@@ -744,11 +777,30 @@ section {
 }
 
 #shop {
-    background: rgba(0, 0, 0, .05);
+    background-image: url('../img/bird2.JPG');
+    background-size: cover;
+    background-position: 0 -5em;
+}
+
+.shop-link {
+    padding-top: 5em;
+    text-align: center;
+}
+
+.shop-pad {
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 #cart {
     background: rgba(0, 0, 0, .1);
+}
+
+#log-in {
+    background-image: url('../img/monkey.jpg');
+    background-size: cover;
+    background-position: 0 -5em;
 }
 
 /* VERTICAL MEDIA QUERY AND HEIGHT/PADDING TO BOTTOM OF CONTACT SECTION ONLY FOR LARGE SCREENS - CREDIT TO ROMINA FOR THIS IDEA */
@@ -767,5 +819,16 @@ section {
     border-bottom: 1px solid white;
     margin-bottom: 2em;
     margin-top: 2em;
+    
+}
 
+.total-row {
+    border-bottom: 1px solid white;
+    margin-bottom: 4em;
+    
+}
+
+.total-info {
+    display: flex;
+    justify-content: space-between;
 }
