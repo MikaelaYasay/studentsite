@@ -233,13 +233,19 @@ a:hover{
 }
 .horiz-center {
     margin-left: auto;
-    Margin-right: auto;
+    margin-right: auto;
 }
 
 /* IMAGES */
 img {
     max-width: 100%;
     height: auto;
+}
+
+.self-portrait {
+    background-size: cover;
+    max-width: 50%;
+    padding-right: 1em;
 }
 
 
@@ -252,8 +258,8 @@ form input[type="submit"] {
     font-size: inherit;
     line-height: 1;
     background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 1);
-    color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
     padding: 1em;
     display: inline-block;
     margin: .5em .5em .5em 0;
@@ -266,8 +272,8 @@ form input[type="submit"] {
 .button2:hover,
 button:hover,
 form input[type="submit"]:hover {
-    background-color: rgb(53, 53, 167);
-    border-color: rgb(53, 53, 167);
+    background-color: rgba(75, 75, 223, 0.288);
+    border-color: rgba(75, 75, 223, 0.288);
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
@@ -300,7 +306,7 @@ body { margin: 0; }
 
 /*  CONTAINER */
 .container {
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 1em 4%;
 }
@@ -450,6 +456,8 @@ body.demo::before {
 
 /* STYLING FOR BOTH HEADER AND FOOTER */
 .site-header {
+    position: relative;
+    z-index: 100;
     background: rgba(75, 75, 223, 0.288);
     padding-bottom: 0.4em;
 }
@@ -727,8 +735,8 @@ form input[type="submit"] {
 
 /* CUSTOM SITE CSS */
 section {
+    overflow-x: hidden;
     position: relative;
-    z-index: -1;
 
 }
 
@@ -740,12 +748,26 @@ section {
     top: 30%;
 }
 
+.about-me {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    border: 1px solid red;
+    top: 10%;  
+}
+
 
 .section-title2 {
     text-align: center;
     margin: 0;
     border: 1px solid red;
     top: 50%;
+}
+
+.section-title.title-right.about-me {
+    right: 0;
+    padding-top: 5em;
+    transform: rotate(-90deg);
 }
 
 .section-title.title-right {
