@@ -26,7 +26,7 @@
 <header class="site-header toggle-nav sticky" data-navstate="closed"> 
         <nav class="site-nav">
             <div class="menu-button navicon essonesnav">Menu</div>
-            <ul class="left-nav">
+            <ul class="left-nav nav-info">
                 <li><a href="#about"class="scroll essonesnav">About Me</a></li>
                 <li><a href="#collection" class="scroll essonesnav">Collection</a></li>
                 <li><a href="#shop"class="scroll essonesnav">Shop</a></li>
@@ -34,13 +34,13 @@
         </nav>
         <div class="site-id">
             <h1 class="flex-logo">
-                <a href="#top" class="scroll"><img src="img/logo.png" alt="placeholder-1x1" height="150" width="150">
+                <a href="#top" class="scroll"><img src="img/logo.png" alt="placeholder-1x1" height="190" width="190">
                     <p class="essonesstudio">Studio</p>
                 </a>
             </h1>
         </div>
         <nav class="site-nav">
-            <ul class="right-nav">
+            <ul class="right-nav nav-info">
                 <li><a href="#cart"class="scroll essonesnav">Cart</a></li>
                 <li><a href="#log-in"class="scroll essonesnav">Log In</a></li>
                 <li><a href="#contact" class="scroll essonesnav">Contact</a></li>
@@ -53,7 +53,7 @@
     <section class="hero">
         <img class="images" src="img/hero.jpg" alt="placeholder-1x1" height="1500" width="1500">
     </section>
-    
+
     <section id="about" class="edge-to-edge portrait">
         <div class="container">
             <h3 class="section-title title-right about-me essonessec">About Me</h3>
@@ -61,7 +61,7 @@
                 <div class="column one-half self-portrait">
                     <img class="images" src="img/portrait.JPG" alt="Square 1x1 Placeholder Image" width="2000" height="2000">
                 </div>
-                <div class="column one-half">
+                <div class="column one-half about-info">
                     <h1 class="essonesname">Jaighden Rayment</h1>
                     <p>I am a young artist starting up a business to showcase my passion for art. From acrylic and oil-paint,to scratchboards and pastels, I can do it all. I also love to paint beautiful landscapes and still-life.
                     Alongside this business, I was born and raised inPowell, Wyoming and had recently moved to Oahu. I am currently a college student at KCC and work part-time in the Hawaii Army National Guard.</p>
@@ -156,16 +156,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="column one-third total-info">
-                    <div class="column one-fourth">
-                        <p class="purchase">Subtotal:</p>
-                        <p class="purchase"> Estimated Shipping and Handling:</p>
-                        <p class="purchase total-row">Estimated Tax:</p>
-                    </div>
-                    <div class="column one-fourth cost-info">
-                        <p>$355.00</p>
-                        <p> $6.00</p>
-                        <p class="total-row">-</p>
+                <div class="column one-third total-info total-row">
+                    <div class="column two-third">
+                        <div class="column one-fourth">
+                            <p class="purchase">Subtotal:</p>
+                            <p class="purchase"> Estimated Shipping and Handling:</p>
+                            <p class="purchase total-row">Estimated Tax:</p>
+                        </div>
+                        <div class="column one-third cost-info">
+                            <p>$355.00</p>
+                            <p> $6.00</p>
+                            <p>-</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,7 +188,11 @@
                         <label for="email">Password:</label>
                         <input type="text" id="contact-email" name="contact-email" />
         
-                        <input type="submit" value="Submit" />
+                        <input type="submit" value="Sign In" />
+                        <div class="login">
+                            <p class="essoneslog">New Here?</p>
+                            <a href="#" class="pragmaticalog">Create an account</a>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -198,22 +204,22 @@
             <form>
                 <div class="row">
                     <div class="column one-half"> 
+                        <input class="contact-text" type="text" id="contact-name" name="contact-name" />
                         <label for="contact-name">First Name:</label>
-                        <input type="text" id="contact-name" name="contact-name" />
                     </div>
 
                     <div class="column one-half">
+                        <input class="contact-text" type="text" id="contact-name" name="contact-name" />
                         <label for="contact-name">Last Name:</label>
-                        <input type="text" id="contact-name" name="contact-name" />
                     </div>
                 </div>
-                <label for="email">Email Address:</label>
-                <input type="text" id="contact-email" name="contact-email" />
+                    <input class="contact-text" type="text" id="contact-email" name="contact-email" />
+                    <label for="email">Email Address:</label> 
     
-                <label for="contact-message">Message:</label>
-                <textarea id="contact-message" name="contact-message"></textarea>
+                    <label for="contact-message">Message:</label>
+                    <textarea class="contact-message" id="contact-message" name="contact-message"></textarea>
                 
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Send" />
             </form>
         </div>
     </section>

@@ -87,6 +87,15 @@ body {
     color: rgba(255, 255, 255, .8);
 }
 
+.essoneslog {
+    font-size: 1em; /* 16px */
+    font-style: italic;
+    font-family: 'Essones', serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(107, 107, 107, 0.8);
+}
+
 .art-title {
     font-size: 1.125em; /* 18px */
     font-style:italic;
@@ -118,6 +127,18 @@ body {
     font-weight: 100;
     line-height: 1.5;
     color: rgba(255, 255, 255, .8);
+}
+
+.pragmaticalog {
+    font-size: 1em; /* 16px */
+    font-family: 'Pragmatica', sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+.about-info {
+    padding: 1em;
 }
 
 /* HEADINGS */
@@ -168,6 +189,11 @@ p {
 
 .description {
     padding: 3.2em 0;
+}
+
+.essoneslog {
+    display: flex;
+    text-align: center;
 }
 
  /* LINKS */
@@ -236,6 +262,10 @@ a:hover{
     margin-right: auto;
 }
 
+.pragmaticalog {
+    text-decoration: none;
+}
+
 /* IMAGES */
 img {
     max-width: 100%;
@@ -247,8 +277,6 @@ img {
     max-width: 50%;
     padding-right: 1em;
 }
-
-
 
 /* BUTTONS */
 .button,
@@ -296,6 +324,11 @@ form input[type="submit"]:hover {
 .button2.alt:hover {
     background-color: rgba(29, 75, 43, 1);
     color: rgba(255, 255, 255, 1);
+}
+
+.pragmaticalog:hover{
+    color: rgba(0, 0, 0, .8);
+    text-decoration: none;
 }
 
 /* LAYOUT */
@@ -459,7 +492,7 @@ body.demo::before {
     position: relative;
     z-index: 100;
     background: rgba(75, 75, 223, 0.288);
-    padding-bottom: 0.4em;
+    padding-top: 1.5em;
 }
 
 .site-footer {
@@ -498,6 +531,10 @@ body.demo::before {
 }
 
 /* SITE NAV */
+.nav-info {
+    margin: 1em;
+}
+
 .site-nav ul {
     padding: 0;
 }
@@ -717,7 +754,7 @@ form label {
 
 form input[type="text"],  
 form textarea {
-    border: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
     padding: .5em;
     color: rgba(0, 0, 0, .6);
 }  
@@ -744,7 +781,6 @@ section {
     position: absolute;
     text-align: center;
     margin: 0;
-    border: 1px solid red;
     top: 30%;
 }
 
@@ -752,7 +788,6 @@ section {
     position: absolute;
     text-align: center;
     margin: 0;
-    border: 1px solid red;
     top: 10%;  
 }
 
@@ -760,13 +795,12 @@ section {
 .section-title2 {
     text-align: center;
     margin: 0;
-    border: 1px solid red;
     top: 50%;
 }
 
 .section-title.title-right.about-me {
     right: 0;
-    padding-top: 5em;
+    padding-top: 4.8em;
     transform: rotate(-90deg);
 }
 
@@ -844,13 +878,28 @@ section {
     
 }
 
+.nav-info {
+    border-top: 1px solid white;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
 .total-row {
     border-bottom: 1px solid white;
     margin-bottom: 4em;
-    
 }
 
 .total-info {
     display: flex;
     justify-content: space-between;
+}
+
+.contact-text {
+    border: transparent;
+    background-color: transparent;
+}
+
+.contact-message {
+    border: 2px solid #ccc;
+    background-color: transparent;
 }
