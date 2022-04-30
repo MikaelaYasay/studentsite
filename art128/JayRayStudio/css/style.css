@@ -60,6 +60,16 @@ body {
     color: rgba(255, 255, 255, .8);
 }
 
+.essonesnav2 {
+    font-size: 1em; /* 16px */
+    text-transform: uppercase;
+    font-family: 'Essones', serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+    border-bottom: 1px solid #ccc;
+}
+
 .essonesstudio{
     font-size: .8em; /* 16px */
     text-transform: uppercase;
@@ -70,8 +80,8 @@ body {
 }
 
 .essonesname{
-    font-size: 2.25em; /* 36px */
-    text-transform: uppercase;
+    margin-top: .2em;
+    font-size: 2.5em; /* 36px */
     font-family: 'Essones', serif;
     font-weight: 200;
     line-height: 1.5;
@@ -93,12 +103,36 @@ body {
     font-family: 'Essones', serif;
     font-weight: 200;
     line-height: 1.5;
-    color: rgba(107, 107, 107, 0.8);
+    color: rgba(159, 159, 159, 0.8);
+}
+
+.essones-p {
+    font-size: 1.5em; /* 16px */
+    font-family: 'Essones', serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+.essones-btn {
+    font-size: 1em; /* 36px */
+    font-family: 'Essones', serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
 }
 
 .art-title {
     font-size: 1.125em; /* 18px */
     font-style:italic;
+    font-family: 'Essones', serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+.total {
+    font-size: 1.125em; /* 18px */
     font-family: 'Essones', serif;
     font-weight: 400;
     line-height: 1.5;
@@ -114,7 +148,17 @@ body {
 }
 
 .cost-info {
+    text-align: right;
     font-size: .7em; /* 16px */
+    font-family: 'Pragmatica', sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+.total-info {
+    text-align: right;
+    font-size: 1.125em; /* 16px */
     font-family: 'Pragmatica', sans-serif;
     font-weight: 200;
     line-height: 1.5;
@@ -137,9 +181,6 @@ body {
     color: rgba(255, 255, 255, .8);
 }
 
-.about-info {
-    padding: 1em;
-}
 
 /* HEADINGS */
 /*
@@ -192,7 +233,7 @@ p {
 }
 
 .essoneslog {
-    display: flex;
+    display: inline-block;
     text-align: center;
 }
 
@@ -204,6 +245,10 @@ a {
 a:hover{
     color: rgba(0, 0, 153, 1);
     text-decoration: underline;
+}
+
+.title-center-pad {
+    padding-top: 2em;
 }
 
 /* HELPER CLASSES */
@@ -235,6 +280,7 @@ a:hover{
     max-width: none;
     width: 100%;
 }
+
 .edge-to-edge {
     margin: 0;
     padding: 0;
@@ -254,9 +300,33 @@ a:hover{
     }
 }
 
+.edge-to-edge2 {
+    margin: 0;
+    padding: 0;
+}
+
+.edge-to-edge2 .container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .edge-to-edge2 .row > .column {
+        margin: 0;
+    }
+    .edge-to-edge2 .row > .column.one-half {
+        max-width: 50%;
+    }
+}
+
 .trans-blue {
     background-color: rgba(26, 39, 53, .8);
 }
+
+.solid-blue {
+    background-color: rgba(26, 39, 53, 1);
+}
+
 .horiz-center {
     margin-left: auto;
     margin-right: auto;
@@ -264,6 +334,15 @@ a:hover{
 
 .pragmaticalog {
     text-decoration: none;
+}
+
+.dis {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space {
+    justify-content: space-between;
 }
 
 /* IMAGES */
@@ -274,13 +353,38 @@ img {
 
 .self-portrait {
     background-size: cover;
-    max-width: 50%;
-    padding-right: 1em;
+}
+
+.portrait {
+    background-size: cover;
+    position: 0 10;
 }
 
 /* BUTTONS */
+.login {
+    text-align: center;}
+
+.log-button {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.send-button {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.collection-button {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 .button,
 .button2,
+.button3,
 button,
 form input[type="submit"] {
     font-size: inherit;
@@ -298,6 +402,7 @@ form input[type="submit"] {
 
 .button:hover,
 .button2:hover,
+.button3:hover,
 button:hover,
 form input[type="submit"]:hover {
     background-color: rgba(75, 75, 223, 0.288);
@@ -312,7 +417,12 @@ form input[type="submit"]:hover {
 }
 
 .button2 {
-    width: 150px;
+    width: 7em;
+    padding-bottom: 1em;
+}
+
+.button3 {
+    width: 20em;
     padding-bottom: 1em;
 }
 
@@ -327,11 +437,20 @@ form input[type="submit"]:hover {
 }
 
 .pragmaticalog:hover{
-    color: rgba(0, 0, 0, .8);
+    color: rgba(195, 195, 195, 0.8);
     text-decoration: none;
 }
 
 /* LAYOUT */
+.about-bio {
+    max-width: 64%;
+    margin: 0 3em;
+    margin-left: 6em;
+}
+
+.info-me {
+    padding: 2em;
+}
 
 /* SIMPLE RESET */
 * { box-sizing: border-box; }
@@ -365,7 +484,7 @@ body { margin: 0; }
 }
 
 /* FOR DEMO PURPOSES */
-body.demo {
+/* body.demo {
     padding-top: 2em;
 }
 body.demo::before {
@@ -398,10 +517,9 @@ body.demo::before {
         background-color: #09c;
         content: 'Extra Large Screen (Desktop) 1250px +';
     }
-}
+} */
 
 /* SEMATIC GRID SYSTEM */
-
 .row > .column {
     margin-bottom: 4%;
 }
@@ -569,7 +687,16 @@ body.demo::before {
     display: inline-block;
     justify-content: space-around;
     text-decoration: none;
-    
+}
+
+.nav3-footer {
+    text-align: center;
+}
+
+.nav3-footer li {
+    display: inline-block;
+    justify-content: space-around;
+    text-decoration: none;
 }
 
 .tabs {
@@ -586,6 +713,11 @@ body.demo::before {
     color: rgba(0, 0, 0, 1);
 }
 
+.site-nav3 a {
+    display: block;
+    color: rgba(0, 0, 0, 1);
+}
+
 .site-nav .menu-button {
     display: none;
 }
@@ -598,7 +730,8 @@ section {
 /* HERO */
 .hero {
     padding: 0;
-    background-color: rgba(0, 0, 0, .1);
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
     text-align: center;
 }
 
@@ -756,7 +889,7 @@ form input[type="text"],
 form textarea {
     border-bottom: 2px solid #ccc;
     padding: .5em;
-    color: rgba(0, 0, 0, .6);
+    color: rgba(255, 255, 255, .8);
 }  
 
 form textarea {
@@ -766,7 +899,7 @@ form textarea {
 
 form input[type="submit"] {
     margin-top: 1.5em;
-    width: auto;
+    width: 200px;
     cursor: pointer;
 }
 
@@ -825,7 +958,15 @@ section {
  }
 
 #about {
-    background: rgba(0, 0, 0, .05);
+    background-image: url('../img/portrait.JPG');
+    background-size: 51%;
+    background-position: 0 25.5em;
+}
+
+.about-pad {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 #collection {
@@ -867,10 +1008,6 @@ section {
 }
 
 /* CART STYLE */
-.cart-rows .one-third:nth-child(1) {
-    /* text-align: right; */
-}
-
 .cart-rows .row {
     border-bottom: 1px solid white;
     margin-bottom: 2em;
@@ -885,13 +1022,8 @@ section {
 }
 
 .total-row {
+    margin: 0;
     border-bottom: 1px solid white;
-    margin-bottom: 4em;
-}
-
-.total-info {
-    display: flex;
-    justify-content: space-between;
 }
 
 .contact-text {
@@ -902,4 +1034,21 @@ section {
 .contact-message {
     border: 2px solid #ccc;
     background-color: transparent;
+}
+
+.name-border {
+    margin-right: 1.5em;
+    margin-top: 1em;
+    display: inline-block;
+    border-top: 2px solid #ccc;
+}
+
+.total {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.total-pad {
+    margin: 0;
+    padding: 0;
 }
