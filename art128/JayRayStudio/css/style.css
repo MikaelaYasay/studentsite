@@ -363,7 +363,13 @@ a:hover{
 
 .icons {
     height: 20px;
-    margin: 0 .3em;
+    margin: -.4em .3em;
+    cursor: pointer;
+}
+
+.copy {
+    height: 12px;
+    margin: -.2em .3em;
     cursor: pointer;
 }
 
