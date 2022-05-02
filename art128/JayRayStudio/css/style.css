@@ -465,7 +465,12 @@ body { margin: 0; }
 
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
-   /* TABLET SIZED STYLING GOES HERE */
+    .body {
+        max-width: 768px;
+    }
+    .essonesnav {
+        font-size: 70% ;
+    }
 }
 
 @media (min-width: 1050px) {
@@ -1019,6 +1024,15 @@ section {
     border-top: 1px solid white;
     margin-bottom: 2em;
     margin-top: 2em;
+}
+
+.nav-info[data-navstate="closed"]{
+    height: 0;
+    overflow: hidden;
+}
+.nav-info[data-navstate="open"] {
+    height: auto;
+    overflow: visible;
 }
 
 .total-row {
