@@ -269,6 +269,7 @@ a:hover{
     top: -9999px;
     left:-9999px;
 }
+
 @media (min-width: 768px) {
     .hidden-desktop {
         position: absolute;
@@ -364,7 +365,7 @@ a:hover{
 }
 
 .icons {
-    height: 20px;
+    height: 1.3em;
     margin: -.4em .3em;
     cursor: pointer;
 }
@@ -425,7 +426,7 @@ form input[type="submit"] {
     display: inline-block;
     margin: .5em .5em .5em 0;
     text-align: center;
-    border-radius: .5em;
+    border-radius: .2em;
     z-index: -1;
 }
 
@@ -494,7 +495,9 @@ body { margin: 0; }
 
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
-   /* TABLET SIZED STYLING GOES HERE */
+    body {
+        font-size: 64%;
+    }
 }
 
 @media (min-width: 1050px) {
@@ -798,6 +801,7 @@ section {
     .toggle-nav[data-navstate="closed"] ul {
         height: 0;
         overflow: hidden;
+        border: 0;
     }
     .toggle-nav[data-navstate="open"] ul {
         height: auto;
@@ -805,6 +809,10 @@ section {
     }
 
     /* NAV ICON */
+    .header-nav {
+        margin-top: 6.6em;
+    }
+
     .toggle-nav .site-nav .menu-button.navicon {
         border: none;
         color: rgba(255, 255, 255, 0);
@@ -812,17 +820,25 @@ section {
     .toggle-nav .site-nav .menu-button.navicon::after {
         content: "\2630";
         display: inline-block;
-        padding: 0 .4em;
+        padding: 1em .4em;
         margin: 0;
-        color: rgba(0, 0, 0, .8);
+        color: rgba(255, 255, 255, .8);
         font-size: 1.5em;
     }
 
     .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
         content: "\2715";
     }
-}
 
+    /* ABOUT ME SECTION */
+    .edge-to-edge .row > .column {
+        margin: 0;
+    }
+    .edge-to-edge .row > .column.one-half {
+        max-width: 100%;
+        padding: .3em 0;
+    }
+}
 
 /* SUB PAGES */
 blockquote {
@@ -906,7 +922,6 @@ form textarea {
 }
 
 form label {
-    margin-top: 1em;
     margin-bottom: .25em;
 }
 
@@ -953,21 +968,21 @@ section {
 .section-title2 {
     text-align: center;
     margin: 0;
-    margin-left: 7.8em;
+    margin-left: 39%;
     margin-bottom: 1.3em;
 }
 
 .section-title3 {
     text-align: center;
     margin: 0;
-    margin-left: 7em;
+    margin-left: 35%;
     margin-bottom: 1.3em;
 }
 
 .section-title4 {
     text-align: center;
     margin: 0;
-    margin-left: 9em;
+    margin-left: 45%;
     margin-bottom: 1.3em;
 }
 
@@ -1083,6 +1098,10 @@ section {
 .contact-message {
     border: 2px solid #ccc;
     background-color: transparent;
+}
+
+.contact-label {
+    margin-top: 3em;
 }
 
 .name-border {

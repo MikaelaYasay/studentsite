@@ -27,28 +27,29 @@
 
 
 <header class="site-header toggle-nav sticky" data-navstate="closed"> 
-        <nav class="site-nav">
-            <div class="menu-button navicon essonesnav">Menu</div>
-            <ul class="left-nav nav-info">
-                <li><a href="#about"class="scroll essonesnav">About Me</a></li>
-                <li><a href="#collection" class="scroll essonesnav">Collection</a></li>
-                <li><a href="#shop"class="scroll essonesnav">Shop</a></li>
-            </ul>
-        </nav>
-        <div class="site-id">
-            <h1 class="flex-logo">
-                <a href="#top" class="scroll"><img src="img/logo.png" alt="placeholder-1x1" height="190" width="190">
-                    <p class="essonesstudio">Studio</p>
-                </a>
-            </h1>
-        </div>
-        <nav class="site-nav">
-            <ul class="right-nav nav-info">
-                <li><a href="#cart"class="scroll essonesnav">Cart</a></li>
-                <li><a href="#log-in"class="scroll essonesnav">Log In</a></li>
-                <li><a href="#contact" class="scroll essonesnav">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="site-nav">
+        <div class="menu-button navicon essonesnav">Menu</div>
+        <ul class="left-nav nav-info">
+            <li><a href="#about"class="scroll essonesnav">About Me</a></li>
+            <li><a href="#collection" class="scroll essonesnav">Collection</a></li>
+            <li><a href="#shop"class="scroll essonesnav">Shop</a></li>
+        </ul>
+    </nav>
+    </nav>
+    <div class="site-id">
+        <h1 class="flex-logo">
+            <a href="#top" class="scroll"><img src="img/logo.png" alt="placeholder-1x1" height="190" width="190">
+                <p class="essonesstudio">Studio</p>
+            </a>
+        </h1>
+    </div>
+    <nav class="site-nav header-nav">
+        <ul class="right-nav nav-info">
+            <li><a href="#cart"class="scroll essonesnav">Cart</a></li>
+            <li><a href="#log-in"class="scroll essonesnav">Log In</a></li>
+            <li><a href="#contact" class="scroll essonesnav">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main class="site-main">
@@ -60,7 +61,7 @@
     <section id="about" class="edge-to-edge">
         <h3 class="section-title title-right about-me essonessec">About Me</h3>
         <div class="row">
-            <div class="column one-half">
+            <div class="column one-half about-767">
                 <img class="hidden" src="img/portrait.JPG" alt="Square 1x1 Placeholder Image" width="2000" height="2000">
             </div>
             <div class="column one-half solid-blue">
@@ -98,22 +99,22 @@
     </section>
 
     <section id="shop" class="edge-to-edge">
-            <h3 class="section-title title-left essonessec">Shop</h3>
-            <div class="row">
-                <div class="column one-half trans-blue">
-                    <div class="shop-pad">
-                        <p class="essones-p">Purchase</p>
-                        <a href="#" class="button2 essones-btn">Read More</a>             
-                    </div>
-                    <div class="shop-pad">
-                        <p class="essones-p">Personalize</p>
-                        <a href="#" class="button2 essones-btn">Read More</a>
-                    </div>
+        <h3 class="section-title title-left essonessec">Shop</h3>
+        <div class="row">
+            <div class="column one-half trans-blue">
+                <div class="shop-pad">
+                    <p class="essones-p">Purchase</p>
+                    <a href="#" class="button2 essones-btn">Read More</a>             
                 </div>
-                <div class="column one-half">
-                    <img class="birdimg hidden" src="img/bird.JPG" alt="Square 1x1 Placeholder Image" width="1500" height="1000">
+                <div class="shop-pad">
+                    <p class="essones-p">Personalize</p>
+                    <a href="#" class="button2 essones-btn">Read More</a>
                 </div>
             </div>
+            <div class="column one-half">
+                <img class="birdimg hidden" src="img/bird.JPG" alt="Square 1x1 Placeholder Image" width="1500" height="1000">
+            </div>
+        </div>
     </section>
 
     <section id="cart">
@@ -192,28 +193,28 @@
     </section>
 
     <section id="log-in" class="edge-to-edge">
-            <h3 class="section-title title-right essonessec">Log In</h3>
-            <div class="row">
-                <div class="column one-half">
-                    <img class="birding hidden" src="img/monkey.jpg" alt="Square 1x1 Placeholder Image" width="1500" height="1000">
-                </div>
-                <div class="column one-half trans-blue">
-                    <form class="log-form"> 
-                        <input class="contact-text" type="text" id="contact-name" name="contact-name" />
-                        <label for="contact-name">Username</label>
-            
-                        <input class="contact-text" type="text" id="contact-email" name="contact-email" />
-                        <label for="email">Password</label>
-        
-                        <div class="log-button"><a href="#" class="button3 essones-btn">Sign In</a></div>
-
-                        <div class="login">
-                            <p class="essoneslog">New Here?</p>
-                            <a href="#" class="pragmaticalog">Create an account</a>
-                        </div>
-                    </form>
-                </div>
+        <h3 class="section-title title-right essonessec">Log In</h3>
+        <div class="row">
+            <div class="column one-half">
+                <img class="birding hidden" src="img/monkey.jpg" alt="Square 1x1 Placeholder Image" width="1500" height="1000">
             </div>
+            <div class="column one-half trans-blue">
+                <form class="log-form"> 
+                    <input class="contact-text" type="text" id="contact-name" name="contact-name" />
+                    <label for="contact-name">Username</label>
+        
+                    <input class="contact-text" type="text" id="contact-email" name="contact-email" />
+                    <label for="email">Password</label>
+    
+                    <div class="log-button"><a href="#" class="button3 essones-btn">Sign In</a></div>
+
+                    <div class="login">
+                        <p class="essoneslog">New Here?</p>
+                        <a href="#" class="pragmaticalog">Create an account</a>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 
     <section id="contact">
@@ -223,18 +224,18 @@
                 <div class="row">
                     <div class="column one-half"> 
                         <input class="contact-text" type="text" id="contact-name" name="contact-name" />
-                        <label for="contact-name">First Name:</label>
+                        <label for="contact-name">First Name</label>
                     </div>
 
                     <div class="column one-half">
                         <input class="contact-text" type="text" id="contact-name" name="contact-name" />
-                        <label for="contact-name">Last Name:</label>
+                        <label for="contact-name">Last Name</label>
                     </div>
                 </div>
                     <input class="contact-text" type="text" id="contact-email" name="contact-email" />
-                    <label for="email">Email Address:</label> 
+                    <label for="email">Email Address</label> 
     
-                    <label for="contact-message">Message:</label>
+                    <label class="contact-label" for="contact-message">Message</label>
                     <textarea class="contact-message" id="contact-message" name="contact-message"></textarea>
                 
                 <div class="send-button"><a href="#" class="button2 essones-btn">Send</a></div>
