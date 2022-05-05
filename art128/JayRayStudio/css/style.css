@@ -723,6 +723,8 @@ body.demo::before {
 
 .nav3-footer {
     text-align: center;
+    padding: 0;
+    gap: .5em;
 }
 
 .nav3-footer li {
@@ -772,6 +774,9 @@ section {
 /* TOGGLE NAV */
 
 @media (max-width: 767px) {
+    body {
+        font-size: 70%;
+    }
     .toggle-nav .site-id {
         position: absolute;
     }
@@ -837,6 +842,41 @@ section {
     .edge-to-edge .row > .column.one-half {
         max-width: 100%;
         padding: .3em 0;
+    }
+
+    /* LOG IN SECTION */
+    .edge-to-edge {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .edge-to-edge .container {
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    @media (min-width: 768px) {
+        .edge-to-edge .row > .column {
+            margin: 0;
+        }
+        .edge-to-edge .row > .column.one-half {
+            max-width: fit-content;
+        }
+    }
+
+    /* FOOTER SECTION */
+    .nav3-footer {
+        font-size: 40%;
+    }
+    .icons {
+        height: 1em;
+        margin: -.4em .3em;
+        cursor: pointer;
+    }
+    .copy {
+        height: .8em;
+        margin: -.2em .3em;
+        cursor: pointer;
     }
 }
 
