@@ -138,6 +138,11 @@ header a:hover {
     padding: 1em;
 }
 
+/* BODY */
+.page-sub {
+    background-color:rgb(18, 37, 24);
+}
+
 /* NOTES CONTAINER */
 .wall {
     background-color: rgb(18, 37, 24);
@@ -193,6 +198,7 @@ footer {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 1em;
 }
 
 /* SIDEBAR/ASIDE */
@@ -326,6 +332,21 @@ aside {
 }
 
 .project a:hover {
+    color: rgb(35, 78, 49);
+}
+
+.project2 {
+    color: rgba(151, 107, 57, 0.5);
+    margin: 2em 0;
+}
+
+.project2 a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .5);
+    
+}
+
+.project2 a:hover {
     color: rgb(35, 78, 49);
 }
 
@@ -468,10 +489,30 @@ dd {
     margin: 0;
 }
 
+/* TWO COLUMN LISTS */
+.list-two-col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-two-col ul {
+    margin-bottom: 1em;
+}
+
+.list-two-col ul ul {
+    margin-bottom: 0;
+}
+
+.list-two-col li {
+    padding-right: 2em;
+    list-style: none;
+}
 
 
-
-
+/* ASSIGNMENT LIST */
+.list-assignments li li{
+    color: rgba(169, 151, 123, 0.4);
+}
 
 /* FOR WEB DEV PURPOSES ONLY */
  /* body, * {
