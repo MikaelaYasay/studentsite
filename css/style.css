@@ -508,6 +508,25 @@ dd {
     list-style: none;
 }
 
+/* THREE COLUMN LISTS */
+.list-three-col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-three-col ul {
+    margin-bottom: 1em;
+}
+
+.list-three-col ul ul {
+    margin-bottom: 0;
+}
+
+.list-three-col li {
+    padding-right: 1em;
+    list-style: none;
+}
+
 
 /* ASSIGNMENT LIST */
 .list-assignments li li{
